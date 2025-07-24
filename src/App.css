@@ -1,0 +1,47 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    font-size: xx-large;
+}
+
+.web{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+}
+
+.calculator{
+    width: 30vw;
+    height: 40vh;
+    background-color:black;
+  
+    border-radius: 10px;
+    color: white;
+}
+.screen{
+    border: 2px solid;
+
+    width: 30vw;
+    height: 10vh;
+    border-radius: 10px;
+    margin: 1px;
+}
+
+.btns{
+      display: flex;
+    border:2px solid; 
+    border-radius: 10px;
+}
+button{
+    padding: 30px;
+    margin: 3px;
+}
+
+.opt{
+    border: solid 1px;
+    padding: 40px;
+}
