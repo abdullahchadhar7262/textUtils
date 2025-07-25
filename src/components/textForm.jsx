@@ -36,7 +36,7 @@ export default function TextForm(props) {
       backgroundColor:"grey"
      }
   return (
-    <div>
+    <div className="container">
       <div style={style} className={`bg-${mode} rounded border-warning border  text-${mode === "light" ? "dark" : "light"} p-3`} >
         <div class="mb-3 container rounded ">
           <label for="exampleFormControlTextarea1" className="form-label">

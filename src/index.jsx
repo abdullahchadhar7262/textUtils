@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./index.css";
 import TextForm from "./components/textForm";
-import About from "./components/about";
+// import About from "./components/about";
 import Alert from "./components/alert";
 
 function Bootapp() {
@@ -42,24 +42,32 @@ function Bootapp() {
   };
 
   return (
-    <BrowserRouter>
-      <Navbar
-        title="Textutils"
-        about="About"
-        mode={mode}
-        greenishmode={greenishmode}
-        SetMode={SetMode}
-      />
+    <div>
+                <Navbar title="Textutils" about="About" mode={mode} greenishmode={greenishmode}SetMode={SetMode}/>
       <Alert alert={alert} />
+    <TextForm showalert={showalert} />
+    
+    </div>
 
-      <div className="container my-3">
-        <Routes>
-          <Route path="/" element={<TextForm showalert={showalert} />} />
-          <Route path="/about" element={<About />} />
-           <Route exact path="/TextUtils"element={<TextForm showalert={showalert} />}/>
-        </Routes>
-      </div>
-    </BrowserRouter>
+
+    // <BrowserRouter>
+    //   <Navbar
+    //     title="Textutils"
+    //     about="About"
+    //     mode={mode}
+    //     greenishmode={greenishmode}
+    //     SetMode={SetMode}
+    //   />
+    //   <Alert alert={alert} />
+
+    //   <div className="container my-3">
+    //     <Routes>
+    //       <Route path="/" element={<TextForm showalert={showalert} />} />
+    //       <Route path="/about" element={<About />} />
+    //        <Route exact path="/TextUtils"element={<TextForm showalert={showalert} />}/>
+    //     </Routes>
+    //   </div>
+    // </BrowserRouter>
   );
 }
 
